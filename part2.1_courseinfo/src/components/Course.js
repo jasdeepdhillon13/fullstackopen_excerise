@@ -14,11 +14,15 @@ const Header = ({course}) =>(
     </h2>
 )
 
-const Part = ({part}) => (
+const Part = ({part}) => {
+    console.log("test %d",part.exercises)
+    return (
+    <div>
     <p>
-        {part.name} {part.excerises}
-    </p>
-)
+        {part.name}  {part.exercises}
+    </p>   
+    </div>
+)}
 
 const Content =({parts}) => {
     return (
